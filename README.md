@@ -1,1 +1,3 @@
 # IKT2_GIT_01
+
+- GIT, HTML, CSS3, JavaScript0
