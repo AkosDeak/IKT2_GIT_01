@@ -1,54 +1,33 @@
-/* Alap beállítások */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Fejléc */
-article > header {
-    height: 100px;
-    padding: 10px;
-    background-color: #3939c8;
-    color: white;
-}
-
 /* Tartalmi rész */
 article {
     background-color: #aaaaff;
     color: black;
     padding: 20px;
-}
-
-/* Képek konténere */
-article img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Képek rácsba rendezése */
-article img {
-    margin-top: 20px;
-}
-
-/* Flex grid a képekhez */
-article {
     display: flex;
     flex-direction: column;
+    align-items: center; /* középre igazítás */
 }
 
-/* Képek külön flex konténerben */
-article img {
-    align-self: flex-start;
+/* Szöveges blokkok szürke, áttetsző dobozban */
+article h2,
+article h3,
+article p {
+    background-color: rgba(200, 200, 200, 0.6); /* áttetsző szürke */
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center; /* szöveg középen */
+    border-radius: 8px;
 }
 
-/* Ha több kép lenne */
-article .image-container {
-    display: flex;
-    gap: 10px;
+/* Fejléc (article header) középre */
+article > header {
+    height: 100px;
+    padding: 10px;
+    background-color: #3939c8;
+    color: white;
+    text-align: center;
+    width: 100%;
 }
 
 /* Lábléc */
@@ -61,31 +40,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
-/* A lábléc szöveg töltse ki a maradék magasságot */
+/* Lábléc szöveg kitöltése */
 footer p {
     margin: 0;
     flex: 1;
-}
-
-/* Linkek a láblécben */
-footer a {
-    color: white;
-}
-
-/* ===== RESZPONZÍV KÉPEK ===== */
-
-/* Ha több kép lenne, egymás mellé */
-@media (min-width: 768px) {
-    article .image-container {
-        flex-direction: row;
-    }
-}
-
-/* Kis képernyőn egymás alá */
-@media (max-width: 767px) {
-    article .image-container {
-        flex-direction: column;
-    }
 }
