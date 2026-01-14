@@ -1,3 +1,21 @@
 h1 {
-    color: blue;
+    color: black;
 }
+
+header {
+    height: 100px;
+    padding: 10px;
+    background-color:  #3939c8;
+}
+
+footer {
+    height: 150px;
+    padding: 20px;
+    background-color: #193968;
+    
+}
+
+article{
+    background-color: #aaaaff;
+}
+
